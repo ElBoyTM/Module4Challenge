@@ -11,4 +11,6 @@ readLocalStorage.addEventListener('click', function (event) {
         title: document.getElementById('title'),
         content: document.getElementById('content').trim(),
     };
+
+    localStorage.setItem('formSubmission', JSON.stringify(formSubmission));
 });
