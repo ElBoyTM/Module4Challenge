@@ -4,6 +4,8 @@
 
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
 readLocalStorage.addEventListener('click', function (event) {
+    event.preventDefault();
+
     const formSubmission = {
         username: document.getElementById('username'),
         title: document.getElementById('title'),
