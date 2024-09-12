@@ -9,6 +9,6 @@ readLocalStorage.addEventListener('click', function (event) {
     const formSubmission = {
         username: document.getElementById('username'),
         title: document.getElementById('title'),
-        content: document.getElementById('content'),
+        content: document.getElementById('content').trim(),
     };
 });
