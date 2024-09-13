@@ -12,5 +12,5 @@ document.querySelector('#submission').addEventListener('submit', function (event
         content: document.getElementById('content').value.trim(),
     };
 
-    storeLocalStorage();
+    storeLocalStorage(formSubmission);
 });
