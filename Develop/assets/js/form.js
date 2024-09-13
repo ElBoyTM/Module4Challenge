@@ -11,6 +11,9 @@ document.querySelector('#submission').addEventListener('submit', function (event
         title: document.getElementById('title').value.trim(),
         content: document.getElementById('content').value.trim(),
     };
-
-    storeLocalStorage(formSubmission);
+    if (!formSubmission.username || !formSubmission.title || !formSubmission.content) {
+        document.querySelector('#error').textContent = "ERROR"
+    } else {
+        storeLocalStorage(formSubmission);
+    }
 });
