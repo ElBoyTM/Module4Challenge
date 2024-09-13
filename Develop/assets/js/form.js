@@ -5,7 +5,7 @@
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
 document.querySelector('#submission').addEventListener('submit', function (event) {
     event.preventDefault();
-
+    formArray = [];
     const formSubmission = {
         username: document.getElementById('username').value.trim(),
         title: document.getElementById('title').value.trim(),
