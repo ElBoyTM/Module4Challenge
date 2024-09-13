@@ -12,6 +12,5 @@ document.querySelector('#submission').addEventListener('submit', function (event
         content: document.getElementById('content').value.trim(),
     };
 
-    // localStorage.setItem('formSubmission', JSON.stringify(formSubmission));
-    // add to logic
+    storeLocalStorage();
 });

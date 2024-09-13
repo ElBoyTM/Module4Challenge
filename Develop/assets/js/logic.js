@@ -5,8 +5,9 @@
 
 
 // TODO: Create a function called `storeLocalStorage` that takes a given object and saves the new data to the existing blog data in local storage.
-
-
+const storeLocalStorage = function() {
+  localStorage.setItem('formSubmission', JSON.stringify(formSubmission));
+};
 // ! Use the following function whenever you need to redirect to a different page
 
 let redirectURL = '';
