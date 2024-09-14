@@ -5,7 +5,7 @@
 const readLocalStorage = function() {
   const blogArray = JSON.parse(localStorage.getItem('formArray'));
   if (blogArray == null) {
-    let blogPosts = [];
+    return blogPosts = [];
   };
 };
 
