@@ -16,8 +16,7 @@ const noPosts = function() {
     noPosts.textContent = "No posts to display";
     blogSpace.appendChild(noPosts);
 };
-noPosts();
 
-// if (blogPosts = []) {
-//     noPosts();
-// };
+if (blogPosts = []) {
+    noPosts();
+};
