@@ -22,4 +22,16 @@ if (blogArray.length == 0) {
     noPosts();
 };
 
-for (let i = 0; i < blogArray.length; i++) {}
+for (let i = 0; i < blogArray.length; i++) {
+    const blogTitle = document.createElement('h3');
+    blogTitle.textContent = blogArray[i].title;
+    blogSpace.appendChild(blogTitle);
+
+    const blogContent = document.createElement('p');
+    blogContent.textContent = blogArray[i].content;
+    blogSpace.appendChild(blogContent);
+
+    const blogUsername = document.createElement('h4');
+    blogUsername.textContent = blogArray[i].username;
+    blogSpace.appendChild(blogUsername);
+};
