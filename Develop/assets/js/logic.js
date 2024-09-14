@@ -3,9 +3,11 @@
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
 const readLocalStorage = function() {
-  const blogArray = JSON.parse(localStorage.getItem('formSubmission'));
-  if (blogArray === null) {
-    return blogArray = [];
+  const blogSubmission = JSON.parse(localStorage.getItem('formSubmission'));
+  if (blogSubmission == null) {
+    return [];
+  } else {
+    return blogSubmission;
   };
 };
 

@@ -9,7 +9,7 @@
 // TODO: Call the `renderBlogList` function
 
 // TODO: Redirect to the home page using the `redirectPage` function found in logic.js when the back button is clicked
-readLocalStorage();
+let blogArray = readLocalStorage();
 const blogSpace = document.querySelector('main');
 
 const noPosts = function() {
@@ -18,6 +18,6 @@ const noPosts = function() {
     blogSpace.appendChild(noPosts);
 };
 
-if (blogArray = []) {
+if (blogArray.length == 0) {
     noPosts();
 };
