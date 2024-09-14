@@ -19,5 +19,6 @@ document.querySelector('#submission').addEventListener('submit', function (event
     } else {
         formArray.push(formSubmission);
         storeLocalStorage(formArray);
+        window.location.href = "blog.html"
     }
 });
