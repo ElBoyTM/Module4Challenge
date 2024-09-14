@@ -18,6 +18,6 @@ const noPosts = function() {
     blogSpace.appendChild(noPosts);
 };
 
-if (blogPosts = []) {
+if (blogArray = []) {
     noPosts();
 };
