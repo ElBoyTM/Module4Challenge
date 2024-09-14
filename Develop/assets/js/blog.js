@@ -9,6 +9,8 @@
 // TODO: Call the `renderBlogList` function
 
 // TODO: Redirect to the home page using the `redirectPage` function found in logic.js when the back button is clicked
+const blogSpace = document.querySelector('main');
+
 const noPosts = function() {
     const noPosts = document.createElement('h2');
     noPosts.textContent = "No posts to display";
