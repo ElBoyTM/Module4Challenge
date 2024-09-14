@@ -14,8 +14,10 @@ const blogSpace = document.querySelector('main');
 const noPosts = function() {
     const noPosts = document.createElement('h2');
     noPosts.textContent = "No posts to display";
+    blogSpace.appendChild(noPosts);
 };
+noPosts();
 
-if (blogPosts = []) {
-    noPosts();
-};
+// if (blogPosts = []) {
+//     noPosts();
+// };
