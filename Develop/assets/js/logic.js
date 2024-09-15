@@ -8,13 +8,13 @@ if (localStorage.getItem('darkMode') == null) {
 const toggleStatus = function() {
   if (localStorage.getItem('darkMode') === 'true') {
     darkToggle.checked = true;
-    document.getElementsByTagName('main').classList.toggle('dark');
+    document.getElementsByTagName('body').classList.toggle('dark');
   } else {
     darkToggle.checked = false;
-    document.getElementsByTagName('main').classList.toggle('light');
+    document.getElementsByTagName('body').classList.toggle('light');
   };
 };
-toggleStatus();
+// toggleStatus();
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
 const readLocalStorage = function() {
