@@ -1,4 +1,6 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
+const darkToggle = document.getElementById('darkMode');
+
 if (localStorage.getItem('darkMode') == null) {
   localStorage.setItem('darkMode', 'false');
 };
