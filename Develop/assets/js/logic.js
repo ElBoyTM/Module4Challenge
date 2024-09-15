@@ -14,7 +14,7 @@ const toggleStatus = function() {
     document.getElementsByTagName('body').classList.toggle('light');
   };
 };
-// toggleStatus();
+toggleStatus();
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
 const readLocalStorage = function() {
