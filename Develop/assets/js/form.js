@@ -15,7 +15,7 @@ document.querySelector('#submission').addEventListener('submit', function (event
     };
 
     if (!formSubmission.username || !formSubmission.title || !formSubmission.content) {
-        document.querySelector('#error').textContent = "Please complete the form"
+        document.querySelector('#error').textContent = "Please complete the form."
     } else {
         formArray.push(formSubmission);
         storeLocalStorage(formArray);
