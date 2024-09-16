@@ -16,6 +16,16 @@ const toggleStatus = function() {
 };
 toggleStatus();
 
+const switchMode = function() {
+  if (localStorage.getItem('darkMode') === 'true') {
+    localStorage.setItem('darkMode', 'false');
+    document.getElementsByTagName('body')[0].classList.toggle('dark');
+  } else {
+    localStorage.setItem('darkMode', 'true');
+    document.getElementsByTagName('body')[0].classList.toggle('light');
+  }
+}
+
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
 const readLocalStorage = function() {
   const blogSubmission = JSON.parse(localStorage.getItem('formSubmission'));
