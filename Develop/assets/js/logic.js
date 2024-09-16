@@ -8,10 +8,10 @@ if (localStorage.getItem('darkMode') == null) {
 const toggleStatus = function() {
   if (localStorage.getItem('darkMode') === 'true') {
     darkToggle.checked = true;
-    document.getElementsByTagName('body').classList.toggle('dark');
+    document.getElementsByTagName('body')[0].classList.toggle('dark');
   } else {
     darkToggle.checked = false;
-    document.getElementsByTagName('body').classList.toggle('light');
+    document.getElementsByTagName('body')[0].classList.toggle('light');
   };
 };
 toggleStatus();
