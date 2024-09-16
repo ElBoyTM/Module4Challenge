@@ -14,7 +14,7 @@ const blogSpace = document.querySelector('main');
 
 const noPosts = function() {
     const noPosts = document.createElement('h2');
-    noPosts.textContent = "No blog posts yet...";
+    noPosts.textContent = "No Blog posts yet...";
     blogSpace.appendChild(noPosts);
 };
 
@@ -22,16 +22,19 @@ if (blogArray.length == 0) {
     noPosts();
 };
 
-for (let i = 0; i < blogArray.length; i++) {
-    const blogTitle = document.createElement('h3');
-    blogTitle.textContent = blogArray[i].title;
-    blogSpace.appendChild(blogTitle);
+const renderBlogList = function() {
+    for (let i = 0; i < blogArray.length; i++) {
+        const blogTitle = document.createElement('h3');
+        blogTitle.textContent = blogArray[i].title;
+        blogSpace.appendChild(blogTitle);
 
-    const blogContent = document.createElement('p');
-    blogContent.textContent = blogArray[i].content;
-    blogSpace.appendChild(blogContent);
+        const blogContent = document.createElement('p');
+        blogContent.textContent = blogArray[i].content;
+        blogSpace.appendChild(blogContent);
 
-    const blogUsername = document.createElement('h4');
-    blogUsername.textContent = blogArray[i].username;
-    blogSpace.appendChild(blogUsername);
+        const blogUsername = document.createElement('h4');
+        blogUsername.textContent = blogArray[i].username;
+        blogSpace.appendChild(blogUsername);
+    };
 };
+renderBlogList();

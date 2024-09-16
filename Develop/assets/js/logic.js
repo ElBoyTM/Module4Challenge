@@ -1,30 +1,22 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
-const darkToggle = document.getElementById('darkMode');
+const darkToggle = document.getElementById('toggle');
 
 if (localStorage.getItem('darkMode') == null) {
   localStorage.setItem('darkMode', 'false');
 };
 
-const toggleStatus = function() {
-  if (localStorage.getItem('darkMode') === 'true') {
-    darkToggle.checked = true;
-    document.getElementsByTagName('body')[0].classList.toggle('dark');
-  } else {
-    darkToggle.checked = false;
-    document.getElementsByTagName('body')[0].classList.toggle('light');
-  };
-};
-toggleStatus();
-
 const switchMode = function() {
   if (localStorage.getItem('darkMode') === 'true') {
     localStorage.setItem('darkMode', 'false');
-    document.getElementsByTagName('body')[0].classList.toggle('dark');
+    document.getElementsByTagName('body')[0].classList.add('light');
+    document.getElementsByTagName('body')[0].classList.remove('dark');
   } else {
     localStorage.setItem('darkMode', 'true');
-    document.getElementsByTagName('body')[0].classList.toggle('light');
-  }
-}
+    document.getElementsByTagName('body')[0].classList.add('dark');
+    document.getElementsByTagName('body')[0].classList.remove('light');
+  };
+};
+switchMode();
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
 const readLocalStorage = function() {
@@ -42,7 +34,7 @@ const storeLocalStorage = function(formArray) {
 };
 // ! Use the following function whenever you need to redirect to a different page
 
-let redirectURL = '';
+let redirectURL = 'blog.html';
 
 const redirectPage = function (url) {
   redirectURL = url;
