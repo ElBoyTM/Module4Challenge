@@ -29,6 +29,7 @@ const readLocalStorage = function() {
 };
 
 // TODO: Create a function called `storeLocalStorage` that takes a given object and saves the new data to the existing blog data in local storage.
+const formArray = readLocalStorage();
 const storeLocalStorage = function() {
   const blogSubmission = readLocalStorage();
   blogSubmission.push(formArray);
